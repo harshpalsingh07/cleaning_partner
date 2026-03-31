@@ -15,6 +15,7 @@ function Edit() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    document.title = "Services Edit | Admin";
     handleGetRow("service", id);
   }, [id]);
 

@@ -96,6 +96,15 @@ function Sidebar({ isOpen, setIsOpen }) {
             >
               Services
             </NavLink>
+            <NavLink
+              to="booking"
+              className={`${linkClass} ${
+                isMenuActive("/admin/c") ? activeClass : ""
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              Booking
+            </NavLink>
           </nav>
         </div>
 

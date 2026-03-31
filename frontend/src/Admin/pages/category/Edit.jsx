@@ -15,6 +15,7 @@ function Edit() {
 
   useEffect(() => {
     handleGetRow("category", id);
+    document.title = "Category Edit | Admin";
   }, [id]);
 
   useEffect(() => {

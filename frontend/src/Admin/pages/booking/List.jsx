@@ -21,7 +21,7 @@ function List() {
       },
 
       {
-        column: "Date",
+        column: "createdAt",
         index: "createdAt",
       },
       {
@@ -30,11 +30,7 @@ function List() {
       },
     ],
     type: "category",
-    title: "Categories",
-    createUrl: "/admin/category/create",
-    editUrl: "/admin/category/edit/",
-    deleteUrl: "/category/",
-    bulkDelete: "category",
+    title: "Bookings",
   };
   return <>{<DataTable table={tableData} />}</>;
 }

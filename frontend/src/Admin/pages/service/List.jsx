@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DataTable from "../../../Utils/DataTable.jsx";
 
 function List() {
+  useEffect(() => {
+    document.title = "Services | Admin";
+  }, []);
   const tableData = {
     headers: [
       {

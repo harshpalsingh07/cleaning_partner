@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Input from "../../../Utils/Input";
 import SelectBox from "../../../Utils/SelectBox";
 import Textarea from "../../../Utils/Textarea";
@@ -16,6 +16,10 @@ function Add() {
     description: "",
   });
   const [errForm, setErrForm] = useState({});
+
+  useEffect(() => {
+    document.title = "Category Add | Admin";
+  }, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({

@@ -30,7 +30,7 @@ function Add() {
       const cateResult = await getDataSelectBox("category/list");
       setCategory(cateResult);
     };
-
+    document.title = "Services Add | Admin";
     fetchCategory();
   }, []);
 

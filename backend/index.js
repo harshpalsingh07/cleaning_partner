@@ -6,6 +6,7 @@ import cors from "cors";
 import userRouter from "./routes/userRoutes.js";
 import categoryRouter from "./routes/categoryRoutes.js";
 import serviceRoutes from "./routes/serviceRoutes.js";
+import FrontRoutes from "./routes/FrontRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -19,6 +20,7 @@ connectDB();
 
 app.use("/api", userRouter);
 app.use("/api/category", categoryRouter);
+app.use("/api/web", FrontRoutes);
 app.use("/api/service", serviceRoutes);
 
 app.get("/", (req, res) => {

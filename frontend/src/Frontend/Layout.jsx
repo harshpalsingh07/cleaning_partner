@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 function Layout() {
   return (
     <>
-      <div className="body">
+      <div className="bg-gray-50 text-gray-800">
         <Navbar />
         <Outlet />
       </div>
